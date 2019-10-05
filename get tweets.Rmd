@@ -1,0 +1,23 @@
+---
+title: "First Language - Twitter responses"
+output: html_notebook
+---
+
+
+
+```{r load tweets}
+library(rtweet)
+library(keyring)
+token <- create_token(
+  app = "sfmoma_tokens",
+  consumer_key = rstudioapi::askForSecret("twitter api"),
+  consumer_secret = rstudioapi::askForSecret("api secret"),
+  access_token = rstudioapi::askForSecret("api token"),
+  access_secret = rstudioapi::askForSecret("token secret")
+)
+
+
+
+```
+
+
